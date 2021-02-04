@@ -21,7 +21,7 @@ class GendersCard extends StatelessWidget {
         ),
         Text(
           genderText,
-          style: kGendersTextStyle,
+          style: kLabelsTextStyle,
         ),
       ],
     );

@@ -225,14 +225,11 @@ class _InputPageState extends State<InputPage> {
               height: 80.0,
               width: double.infinity,
               margin: EdgeInsets.only(top: 10.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Calculate',
-                    style: kCalculateTextStyle,
-                  ),
-                ],
+              child: Center(
+                child: Text(
+                  'Calculate',
+                  style: kCalculateTextStyle,
+                ),
               ),
             ),
           )

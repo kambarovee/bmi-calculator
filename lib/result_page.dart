@@ -1,6 +1,7 @@
 import 'package:bmi_calculator/constants.dart';
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
+import 'bottom_button.dart';
 
 class ResultPage extends StatelessWidget {
   @override
@@ -42,7 +43,13 @@ class ResultPage extends StatelessWidget {
                     style: kLabelsTextStyle,
                   ),
                   Text('18.5 - 25 kg/m^2'),
-                  Text('You have a normal body weight. Good job!')
+                  Text('You have a normal body weight. Good job!'),
+                  bottomButton(
+                    bottomText: 'Re-Calculate',
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
                 ],
               ),
             ),
